@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="getDataButton" id="getAllDataButton" onclick="getAllData()">Загрузить данные</button>
+        <div class="search-block">
+            <button id="searchDataButton" onclick="searchData()">Найти данные</button>
+            <input id="sortByInput" placeholder="sort by" class="sortByInput">
+            <input id="searchTextInput" placeholder="search text" class="searchTextInput">
+            <input type="radio" id="sortDirAsk" name="sort" value="Ask" checked><label for="sortDirAsk">Ask</label>
+            <input type="radio" id="sortDirDesk" name="sort" value="Desk"><label for="sortDirDesk">Desk</label>
+        </div>
+        <button id="saveDataButton" onclick="saveData()">Сохранить результат</button>
+
+        <div class="content"></div>
+    </div>
+<script src="data.js"></script>
+</body>
+</html>
